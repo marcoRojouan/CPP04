@@ -6,7 +6,7 @@
 /*   By: mrojouan <mrojouan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/07 10:11:20 by mrojouan          #+#    #+#             */
-/*   Updated: 2026/08/06 10:40:13 by mrojouan         ###   ########.fr       */
+/*   Updated: 2026/08/10 13:20:01 by mrojouan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,15 @@ int main()
     std::cout << "\n========== Deep Copy Test ==========\n" << std::endl;
 
     Dog dog1;
-    dog1.getBrain()->getIdea(0) = "I want a bone";
-    dog1.getBrain()->getIdea(1) = "I want to play";
+    dog1.getBrain()->setIdea(0, "I want a bone");
+    dog1.getBrain()->setIdea(1, "I want to play");
 
     Dog dog2(dog1);
 
     std::cout << "dog1 idea[0]: " << dog1.getBrain()->getIdea(0) << std::endl;
     std::cout << "dog2 idea[0]: " << dog2.getBrain()->getIdea(0) << std::endl;
 
-    dog2.getBrain()->getIdea(1) = "I want food";
+    dog2.getBrain()->setIdea(1,"I want food");
 
     std::cout << "\nAfter modifying dog2:\n";
     std::cout << "dog1 idea[0]: " << dog1.getBrain()->getIdea(0) << std::endl;
@@ -56,7 +56,7 @@ int main()
 
     std::cout << "dog3 idea[1]: " << dog3.getBrain()->getIdea(1) << std::endl;
 
-    dog3.getBrain()->getIdea(1) = "I want to sleep";
+    dog3.getBrain()->setIdea(1, "I want to sleep");
 
     std::cout << "\nAfter modifying dog3:\n";
     std::cout << "dog1 idea[1]: " << dog1.getBrain()->getIdea(1) << std::endl;
