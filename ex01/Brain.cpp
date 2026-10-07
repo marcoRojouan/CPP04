@@ -6,7 +6,7 @@
 /*   By: mrojouan <mrojouan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/14 12:02:33 by mrojouan          #+#    #+#             */
-/*   Updated: 2026/07/16 10:30:46 by mrojouan         ###   ########.fr       */
+/*   Updated: 2026/10/07 14:13:54 by mrojouan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,3 @@ Brain::~Brain(void)
 {
 	std::cout << "Brain destructor called" << std::endl;
 }
-
-
-
